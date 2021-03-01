@@ -1,0 +1,40 @@
+@keyframes typing {
+ 0% {
+  width: 0ch;
+ } 
+ 100% {
+  width: 25.5ch;
+ }
+}
+@keyframes blinkerCursor {
+ from {
+  border-right-color: white;
+ }
+ to {
+  border-right-color: transparent;
+ }
+}
+@keyframes typing2 {
+ 0% {
+  width: 0ch;
+ } 
+ 100% {
+  width: 19ch;
+ }
+}
+@keyframes blinkerCursor2 {
+ from {
+  border-right-color: lightgreen;
+ }
+ to {
+  border-right-color: transparent;
+ }
+}
+@keyframes openModal {
+ from {
+  transform: scale(0);
+ }
+ to {
+  transform: scale(100%);
+ }
+}

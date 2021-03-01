@@ -1,0 +1,187 @@
+*{
+ background-color: #000714;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Source Code Pro", monospace;
+ color: white;
+}
+body {
+    font-size: 15pt;
+    text-align: center;
+}
+#logo {
+ width: 200px;
+ margin: auto;
+ justify-content: center;
+ display: block;
+ align-items: center;
+ opacity: .8;
+ margin-top: 100px;
+}
+.line {
+ width: 25.5ch;
+ margin-left: 5px;
+ overflow: hidden;
+ white-space: nowrap;
+ border-right: 1px solid white;
+ margin: auto;
+ transform: translateY(-50%);
+ font-size: 13px;
+}
+.anim-typewriter{
+ animation: typing 2s steps(20) .4s 1 normal both, 
+ blinkerCursor 1s steps(20) infinite normal;
+}
+.line2, .line3, .line4, #timer {
+ width: 25.5ch;
+ overflow: hidden;
+ white-space: nowrap;
+ margin-top: 10px;
+ margin: auto;
+ transform: translateY(-50%);
+ font-size: 10px;
+ color: rgb(124, 248, 251);
+}
+.line2 {
+ margin-top: 30px;
+ 
+ animation: typing .5s steps(20) 2s 1 normal both;
+}
+.line3 {
+ 
+ animation: typing .5s steps(20) 2.5s 1 normal both;
+}
+.line4 {
+ 
+ animation: typing .5s steps(20) 3s 1 normal both;
+}
+#timer {
+ animation: typing .5s steps(20) 3s  normal both;
+
+}
+
+
+/* COMMAND LINE INTERFACE*/
+
+/* LOGIN CLI */
+
+.loginfirstlabel {
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ display: none;
+ text-align: center;
+}
+.first {
+ border: none;
+ width: 30ch;
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ text-align: left;
+ display: none;
+}
+.first:hover {
+ border: none;
+ outline: none;
+}
+
+.loginemaillabel {
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ display: none;
+ text-align: center;
+}
+.login-email {
+ border: none;
+ width: 30ch;
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ text-align: left;
+ display: none;
+}
+.login-email:hover {
+ border: none;
+ outline: none;
+}
+.loginpasswordlabel {
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ display: none;
+ text-align: center; 
+}
+.login-password {
+ border: none;
+ width: 30ch;
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ text-align: left;
+ display: none;
+}
+.login-password:hover {
+ border: none;
+ outline: none;
+}
+
+/* Register CLI*/
+
+.registerfirstnamelabel {
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ display: none;
+ text-align: center; 
+}
+.register-firstname {
+ border: none;
+ width: 30ch;
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ text-align: left;
+ display: none;
+}
+.register-firstname:hover {
+ border: none;
+ outline: none;
+}
+.registerlastnamelabel {
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ display: none;
+ text-align: center; 
+}
+.register-lastname {
+ border: none;
+ width: 30ch;
+ font-size: 11px;
+ color: rgb(124, 248, 251);
+ text-align: left;
+ display: none;
+}
+.register-lastname:hover {
+ border: none;
+ outline: none;
+}
+.hello {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ position: absolute;
+ top: 100px;
+ left: 100px;
+}
+.progress {
+ width: 110px;
+ height: 20px;
+ background-color: transparent;
+ display: block;
+ margin: auto;
+ align-items: center;
+ justify-content: center;
+ padding: 5px;
+}
+.bar {
+ height: 50%;
+ width: 0px;
+ border-radius: 50px;
+ transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+ background: linear-gradient(to right,#7CF8FB ,#178AFF);
+}

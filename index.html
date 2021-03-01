@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="John Paul Ganzan">
+  <meta name="theme-color" content="#000714">
+
+  <title>UNISCI</title>
+  
+ <!------ Fonts------>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="anim.css">
+  <script src="res/jquery3.4.1.js"> </script>
+  <script src="main.js"> </script>
+</head>
+
+<body>
+  <img id="logo" src="images/logo.png">
+  
+ <p class="line anim-typewriter"> welcome to this community </p>
+  <p class="line2"> initializing server... </p>
+  <p class="line3"> connecting to database...</p>
+ <p class="line4"> loading.....</p>
+ <p id="timer"> 0% </p>
+  <br />
+  <div class="progress"> <div class="bar"></div> </div>
+  
+ 
+ <!----- login form----->
+ 
+ <label class="loginfirstlabel"for="first">db:\unisci\user> </label><input type="text" class="first" onkeydown="enter(this)" placeholder="type login or register"/>
+ <label class="loginemaillabel"for="login-email">db:\unisci\user> </label><input type="email" class="login-email" onkeydown="emaillogin(this)" placeholder="enter email" required/>
+ <label class="loginpasswordlabel"for="login-password">db:\unisci\user> </label><input type="password" class="login-password" onsubmit="password(this)" placeholder="enter password"/>
+ 
+ <!--------- Register Form ------>
+ 
+ <label class="registerfirstnamelabel"for="register-firstname">db:\unisci\user> </label><input type="text" class="register-firstname" onkeydown="firstname(this)" placeholder="enter firstname"/>
+ <label class="registerlastnamelabel"for="register-lastname">db:\unisci\user> </label><input type="text" class="register-lastname" onkeydown="lastname(this)" placeholder="enter lastname"/>
+ 
+  <!-- Project -->
+</body>
+</html>
